@@ -1,0 +1,26 @@
+# Red Forest Theme for Newsboat
+
+# General colors
+color background          default   default
+color listnormal          default   default
+color listnormal_unread   yellow    default bold
+color listfocus           black     cyan
+color listfocus_unread    black     cyan    bold
+color info                white     default
+color article             default   default
+
+# Article content
+color title               magenta   default bold
+
+# Highlight rules for feeds
+highlight feedlist "^  *[0-9]+ *N " green default bold
+highlight articlelist "^  *[0-9]+ *N " green default bold
+
+# Highlight for URLs and important elements
+highlight article "https?://[^ ]+" cyan default
+highlight article "\\[[0-9]+\\]" magenta default bold
+highlight article "^Feed:.*" yellow default
+highlight article "^Title:.*" magenta default bold
+highlight article "^Author:.*" cyan default
+highlight article "^Date:.*" blue default
+highlight article "^Link:.*" green default
